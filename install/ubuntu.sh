@@ -46,7 +46,7 @@ if ! type "ctags" > /dev/null; then
     sudo apt-get install -y libyaml-dev
     sudo apt-get install -y libxml2-dev
     cd ~/.vim
-    git clone https://github.com/universal-ctags/ctags.git universal-ctags
+    git clone https://hub.fastgit.org/universal-ctags/ctags.git universal-ctags
     cd universal-ctags
     ./autogen.sh
     ./configure

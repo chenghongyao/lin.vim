@@ -57,7 +57,7 @@ if [ $(uname) == "Darwin" ]; then
 else
     mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts
     if [ ! -f Hack.zip ]; then
-        wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+        wget https://hub.fastgit.org/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip 
     fi
     check_download $? "Hack Nerd Fonts"
     unzip -o Hack.zip
