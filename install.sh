@@ -68,6 +68,7 @@ if [ -f ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 ln -s ~/.vim/lin.vim ~/.vimrc
+sleep 1
 vim -c "PlugInstall" -c "qall"
 
 # install user custom
