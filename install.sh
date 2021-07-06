@@ -68,13 +68,14 @@ if [ -f ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 ln -s ~/.vim/lin.vim ~/.vimrc
-sleep 1
-vim -c "PlugInstall" -c "qall"
 
 # install user custom
 cp ~/.vim/template/vim-plug-template.vim ~/.vim/vim-plug.vim
 cp ~/.vim/template/user-settings-template.vim ~/.vim/user-settings.vim
 cp ~/.vim/template/coc-settings-template.json ~/.vim/coc-settings.json
+
+sleep 1
+vim -c "PlugInstall" -c "qall"
 
 # install neovim config
 mkdir -p ~/.config
@@ -89,8 +90,8 @@ ln -s ~/.vim/lin.vim ~/.config/nvim/init.vim
 
 
 # install environment
-cp ~/.vim/template/linvimrc-template.sh ~/.linvimrc
-touch ~/.zshrc
-echo "source ~/.linvimrc" >> ~/.zshrc
-chsh -s $(which zsh)
-source ~/.zshrc 1>/dev/null 2>&1
+# cp ~/.vim/template/linvimrc-template.sh ~/.linvimrc
+# touch ~/.zshrc
+# echo "source ~/.linvimrc" >> ~/.zshrc
+# chsh -s $(which zsh)
+# source ~/.zshrc 1>/dev/null 2>&1
