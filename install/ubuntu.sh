@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+sudo apt-get install -y pkg-config
 sudo apt-get install -y vim
 sudo apt-get install -y vim-gtk
 sudo apt-get install -y libcanberra-gtk-module
