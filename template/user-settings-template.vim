@@ -1,9 +1,7 @@
 " custom configurations
-
 let g:python3_host_prog = '/usr/bin/python3'
-let mapleader=’;‘
 
-
+let mapleader=";"
 " 1. Hot key
 
 " open/close nerdtree file explorer
@@ -15,11 +13,13 @@ map <F3> :call CocAction('format')<CR>
 " switch between C/C++ header source
 map <F4> :CocCommand clangd.switchSourceHeader<CR>
 " open/close terminal
-map <F5> :below terminal ++rows=20<CR>
+" map <F5> :below terminal ++rows=20<CR>
+map <F5> :AsyncTask run<cr>
+map <F6> :AsyncTask cmake-build<cr>
 " open enhanced yank list
-map <F6> :CocList -A --normal yank<CR>
+" map <F6> :CocList -A --normal yank<CR>
 " open markdown preview
-map <F7> :MarkdownPreview<CR>
+" map <F7> :MarkdownPreview<CR>
 " next color
 map <F8> :call NextColor()<CR>
 
@@ -28,6 +28,7 @@ nnoremap <Leader>w <C-w>w
 nnoremap <Leader>f :NERDTreeFocus<CR>
 nnoremap <Leader>q :wqa<CR>
 nnoremap <Leader>Q :qa!<CR>
+
 
 " 2. Enhanced copy paste
 
@@ -100,7 +101,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 
 " 9. indent with 2 space for some languages
-autocmd FileType c,cpp,h,hpp setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
+" autocmd FileType c,cpp,h,hpp setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
 autocmd FileType html,xml,xhtml,json,js setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
 
 " 10. Line length marker=120

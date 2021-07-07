@@ -80,5 +80,10 @@ Plug 'vlime/vlime'
 " Vue
 Plug 'posva/vim-vue'
 
+" Building System
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'skywind3000/vim-terminal-help'
+
 
 call plug#end()

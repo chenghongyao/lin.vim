@@ -40,6 +40,12 @@ source $HOME/.vim/setting/alvan-vim-closetag.vim
 " Markdown
 source $HOME/.vim/setting/plasticboy-vim-markdown.vim
 
+" Building System
+source $HOME/.vim/setting/asyncrun.vim
+source $HOME/.vim/setting/asynctasks.vim
+source $HOME/.vim/setting/vim-terminal-help.vim
+
+
 " 4) user setting
 if filereadable(expand('~/.vim/user-settings.vim'))
     source $HOME/.vim/user-settings.vim
