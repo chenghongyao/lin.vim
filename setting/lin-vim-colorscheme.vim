@@ -20,4 +20,7 @@ function NextColor()
 endfunction
 
 " call NextColor()
-colorscheme molokai
+try
+    colorscheme molokai
+    catch
+endtry
