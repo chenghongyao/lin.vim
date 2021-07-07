@@ -37,6 +37,16 @@ else
     echo "[lin.vim] node already installed, skipping..."
 fi
 
+# Node npm
+if ! type "node" > /dev/null; then
+    # curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    sudo apt-get install -y npm
+else
+    echo "[lin.vim] node already installed, skipping..."
+fi
+
+
 
 # Ctags
 if ! type "ctags" > /dev/null; then
