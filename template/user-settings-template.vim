@@ -14,7 +14,7 @@ map <F3> :call CocAction('format')<CR>
 map <F4> :CocCommand clangd.switchSourceHeader<CR>
 " open/close terminal
 " map <F5> :below terminal ++rows=20<CR>
-map <F5> :AsyncTask run<cr>
+map <F5> :AsyncTask cmake-run<cr>
 map <F6> :AsyncTask cmake-build<cr>
 " open enhanced yank list
 " map <F6> :CocList -A --normal yank<CR>
