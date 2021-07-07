@@ -19,4 +19,5 @@ function NextColor()
     endtry
 endfunction
 
-call NextColor()
+" call NextColor()
+colorscheme molokai
