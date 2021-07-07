@@ -1,5 +1,9 @@
 " custom configurations
 
+let g:python3_host_prog = '/usr/bin/python3'
+let mapleader=’;‘
+
+
 " 1. Hot key
 
 " open/close nerdtree file explorer
@@ -19,6 +23,11 @@ map <F7> :MarkdownPreview<CR>
 " next color
 map <F8> :call NextColor()<CR>
 
+" window operation
+nnoremap <Leader>w <C-w>w
+nnoremap <Leader>f :NERDTreeFocus<CR>
+nnoremap <Leader>q :wqa<CR>
+nnoremap <Leader>Q :qa!<CR>
 
 " 2. Enhanced copy paste
 
