@@ -3,13 +3,14 @@ let g:python3_host_prog = '/usr/bin/python3'
 
 let mapleader=";"
 " 1. Hot key
-
+" ready for command
+map <F1> <esc>:
 " open/close nerdtree file explorer
-map <F1> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 " open/close tagbar
-map <F2> :TagbarToggle<CR>
+map <F3> :TagbarToggle<CR>
 " format current file
-map <F3> :call CocAction('format')<CR>
+" map <F3> :call CocAction('format')<CR>
 " switch between C/C++ header source
 map <F4> :CocCommand clangd.switchSourceHeader<CR>
 " open/close terminal
