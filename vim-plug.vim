@@ -85,5 +85,10 @@ Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skywind3000/vim-terminal-help'
 
+" Python
+" Plug 'cjrh/vim-conda'
+" Plug 'luochen1990/rainbow'
+" let g:rainbow_active = 1
+
 
 call plug#end()

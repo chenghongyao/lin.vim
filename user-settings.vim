@@ -14,20 +14,22 @@ map <F3> :call CocAction('format')<CR>
 map <F4> :CocCommand clangd.switchSourceHeader<CR>
 " open/close terminal
 " map <F5> :below terminal ++rows=20<CR>
-map <F5> :AsyncTask cmake-run<cr>
-map <F6> :AsyncTask cmake-build<cr>
+map <F5> :AsyncTask run<cr>
 " open enhanced yank list
 " map <F6> :CocList -A --normal yank<CR>
 " open markdown preview
 " map <F7> :MarkdownPreview<CR>
 " next color
-map <F8> :call NextColor()<CR>
+" map <F8> :call NextColor()<CR>
+" cmake task
+map <F8> :call AsyncTask cmake-build<cr>
+map <F9> :call AsyncTask cmake-run<cr>
 
 " window operation
 nnoremap <Leader>w <C-w>w
 nnoremap <Leader>f :NERDTreeFocus<CR>
-nnoremap <Leader>q :wqa<CR>
-nnoremap <Leader>Q :qa!<CR>
+nnoremap <Leader>q :wq<CR>
+nnoremap <Leader>Q :wqa!<CR>
 
 
 " 2. Enhanced copy paste
