@@ -23,8 +23,8 @@ map <F5> :AsyncTask run<cr>
 " next color
 " map <F8> :call NextColor()<CR>
 " cmake task
-map <F8> :call AsyncTask cmake-build<cr>
-map <F9> :call AsyncTask cmake-run<cr>
+map <F8> :AsyncTask cmake-build<cr>
+map <F9> :AsyncTask cmake-run<cr>
 
 " window operation
 nnoremap <Leader>w <C-w>w
