@@ -98,9 +98,9 @@ endif
 let g:NERDTreeWinSize=40
 " nerdtree auto open
 autocmd StdinReadPre * let s:std_in=1
-autocmd vimenter * NERDTree
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+" autocmd vimenter * NERDTree
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 
 " 9. indent with 2 space for some languages
